@@ -6,7 +6,7 @@ Testing tools for gulp
 [travis-img]: https://travis-ci.org/sttk/gulp-test-tools.svg?branch=master
 [travis-url]: https://travis-ci.org/sttk/gulp-test-tools
 [appveyor-img]: https://ci.appveyor.com/api/projects/status/github/sttk/gulp-test-tools?branch=master&svn=true
-[appveyor-url]: https://ci.appveyor.com/api/project/sttk/gulp-test-tools
+[appveyor-url]: https://ci.appveyor.com/project/sttk/gulp-test-tools
 
 Install
 -------
