@@ -1,0 +1,36 @@
+{
+  "name": "gulp-test-utils",
+  "version": "0.1.0",
+  "description": "Test tools for gulp",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sttk/gulp-test.git"
+  },
+  "keywords": [
+    "gulp",
+    "test"
+  ],
+  "author": "Takayuki Sato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sttk/gulp-test/issues"
+  },
+  "homepage": "https://github.com/sttk/gulp-test#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.4.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-cli": "^1.2.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2"
+  },
+  "dependencies": {
+    "fs-extra": "^0.30.0"
+  }
+}
