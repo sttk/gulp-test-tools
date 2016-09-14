@@ -1,5 +1,5 @@
 {
-  "name": "gulp-test-utils",
+  "name": "gulp-test-tools",
   "version": "0.1.0",
   "description": "Test tools for gulp",
   "main": "index.js",
