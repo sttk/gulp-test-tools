@@ -1,6 +1,6 @@
 {
   "name": "gulp-test-tools",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Test tools for gulp",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sttk/gulp-test.git"
+    "url": "git+https://github.com/sttk/gulp-test-tools.git"
   },
   "keywords": [
     "gulp",
@@ -19,9 +19,9 @@
   "author": "Takayuki Sato",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sttk/gulp-test/issues"
+    "url": "https://github.com/sttk/gulp-test-tools/issues"
   },
-  "homepage": "https://github.com/sttk/gulp-test#readme",
+  "homepage": "https://github.com/sttk/gulp-test-tools#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.4.0",
