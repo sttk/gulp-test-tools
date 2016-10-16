@@ -1,5 +1,7 @@
 'use strict';
 
+/* eslint max-statements: "off" */
+
 var headLines = require('../').headLines;
 
 var expect = require('chai').expect;
