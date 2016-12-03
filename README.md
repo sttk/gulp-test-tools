@@ -119,7 +119,7 @@ $ node example.js
 
 ```js
 (example.js)
-var skipLines = require('gulp-test-tools').headLines;
+var headLines = require('gulp-test-tools').headLines;
 
 var gulpOutput = 
   "[20:11:53] Using gulpfile ~/project/gulpfile-2.js\n" +
