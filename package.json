@@ -1,6 +1,6 @@
 {
   "name": "gulp-test-tools",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Test tools for gulp",
   "main": "index.js",
   "scripts": {
