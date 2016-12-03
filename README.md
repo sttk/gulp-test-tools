@@ -5,13 +5,6 @@ Testing tools for gulp
 
 [![NPM][npm-img]][npm-url]
 
-[travis-img]: https://travis-ci.org/sttk/gulp-test-tools.svg?branch=master
-[travis-url]: https://travis-ci.org/sttk/gulp-test-tools
-[appveyor-img]: https://ci.appveyor.com/api/projects/status/github/sttk/gulp-test-tools?branch=master&svn=true
-[appveyor-url]: https://ci.appveyor.com/project/sttk/gulp-test-tools
-[npm-img]: https://nodei.co/npm/gulp-test-tools.png
-[npm-url]: https://nodei.co/npm/gulp-test-tools/
-
 Usage
 -----
 
@@ -219,3 +212,10 @@ License
 -------
 
 MIT
+
+[travis-img]: https://travis-ci.org/sttk/gulp-test-tools.svg?branch=master
+[travis-url]: https://travis-ci.org/sttk/gulp-test-tools
+[appveyor-img]: https://ci.appveyor.com/api/projects/status/github/sttk/gulp-test-tools?branch=master&svn=true
+[appveyor-url]: https://ci.appveyor.com/project/sttk/gulp-test-tools
+[npm-img]: https://nodei.co/npm/gulp-test-tools.png
+[npm-url]: https://nodei.co/npm/gulp-test-tools/
