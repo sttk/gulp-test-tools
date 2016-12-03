@@ -3,17 +3,14 @@ gulp-test-tools [![Build Status][travis-img]][travis-url] [![Build Status][appve
 
 Testing tools for gulp
 
+[![NPM][npm-img]][npm-url]
+
 [travis-img]: https://travis-ci.org/sttk/gulp-test-tools.svg?branch=master
 [travis-url]: https://travis-ci.org/sttk/gulp-test-tools
 [appveyor-img]: https://ci.appveyor.com/api/projects/status/github/sttk/gulp-test-tools?branch=master&svn=true
 [appveyor-url]: https://ci.appveyor.com/project/sttk/gulp-test-tools
-
-Install
--------
-
-```
-$ npm install sttk/gulp-test-tools
-```
+[npm-img]: https://nodei.co/npm/gulp-test-tools.png
+[npm-url]: https://nodei.co/npm/gulp-test-tools/
 
 Usage
 -----
@@ -35,7 +32,7 @@ function cb(err, stdout, stderr) {
 }
 ```
 
-```
+```sh
 $ node example.js
 ---- command
 cd /home/sttk/project;
@@ -67,7 +64,7 @@ var gulpOutput =
 console.log(eraseTime(gulpOutput));
 ```
 
-```
+```sh
 $ node example.js
 Starting 'default'...
 Finished 'default' after 5.11 ms
@@ -87,7 +84,7 @@ var gulpOutput =
 console.log(eraseLapse(gulpOutput));
 ```
 
-```
+```sh
 $ node example.js
 [20:11:53] Starting 'default'...
 [20:11:53] Finished 'default' after ?
@@ -107,7 +104,7 @@ var gulpOutput =
 console.log(skipLines(gulpOutput, 1));
 ```
 
-```
+```sh
 $ node example.js
 [20:11:53] Starting 'default'...
 [20:11:53] Finished 'default' after 5.11 ms
@@ -130,7 +127,7 @@ var gulpOutput =
 console.log(headLines(gulpOutput, 1, 2));
 ```
 
-```
+```sh
 $ node example.js
 Hello, world!
 
@@ -141,11 +138,11 @@ API
 
 ### <u>gulpRunner([opts])</u>
 
-Creats a gulp runner which creates a command string and executes  
+Creates a gulp runner which generates a command string and runs it.
 
 ##### Arguments:
 
-* **opts** [object] : options for a runner. This can be 
+* **opts** [object] : options for a runner. This object has following properties:
 
   - **verbose** [boolean] : if `true`, prints command, err, stdout, stderr
 
