@@ -32,11 +32,15 @@ describe('erase lapse', function() {
     expect(eraseLapse(
       '[10:20:30] \'foo\' after 2 s\r\n' +
       '[10:20:30] \'bar\' after 124 ms\r' +
-      '[10:20:30] \'baz\' after 534 μs\n'
+      '[10:20:30] \'baz\' after 534 μs\n' +
+      '[10:20:30] \'errorFunction\' errored after 534 μs\n' +
+      '[10:20:30] \'qux\' after 534 s'
     )).to.equals(
       '[10:20:30] \'foo\' after ?\n' +
       '[10:20:30] \'bar\' after ?\n' +
-      '[10:20:30] \'baz\' after ?\n'
+      '[10:20:30] \'baz\' after ?\n' +
+      '[10:20:30] \'errorFunction\' errored after ?\n' +
+      '[10:20:30] \'qux\' after ?'
     );
     done();
   });
