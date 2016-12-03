@@ -74,6 +74,25 @@ Finished 'default' after 5.11 ms
 
 ```
 
+### eraseLapse
+
+```js
+(example.js)
+var eraseLapse = require('gulp-test-tools').eraseLapse;
+
+var gulpOutput = 
+  "[20:11:53] Starting 'default'...\n" +
+  "[20:11:53] Finished 'default' after 5.11 ms\n";
+
+console.log(eraseLapse(gulpOutput));
+```
+
+```
+$ node example.js
+[20:11:53] Starting 'default'...
+[20:11:53] Finished 'default' after ?
+```
+
 ### skipLines
 
 ```js
@@ -167,6 +186,14 @@ Creats a gulp runner which creates a command string and executes
 ### <u>eraseTime(text)</u>
 
 Returns a text which is erased timestamp of each line.
+
+##### Arguments:
+
+* **text** [string] : stdout text of gulp.
+
+### <u>eraseLapse(text)</u>
+
+Returns a text which is erased lapse time of ease line.
 
 ##### Arguments:
 
