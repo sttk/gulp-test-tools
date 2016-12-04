@@ -69,5 +69,31 @@ describe('run gulp', function() {
     }
   });
 
+  it('Should not clear basedir after running', function(done) {
+    var r = runner().basedir(__dirname + '/fixtures');
+    r.gulp('--tasks-simple').run(function(err, stdout) {
+      expect(stdout).to.equal('task1\ntask2\ndefault\n');
+    });
+    r.chdir('foo/bar').gulp('--tasks-simple').run(function(err, stdout) {
+      expect(stdout).to.equal('a\nb\ndefault\n');
+    });
+    r.gulp().run(function(err, stdout) {
+      expect(stdout).to.equal('task1\ntask2\ndefault\n');
+    });
+    done();
+  });
+
+  it('Should be able to set multiple arguments to `chdir`', function(done) {
+    runner({ verbose: true })
+      .basedir(__dirname)
+      .chdir('fixtures', 'foo', '..', 'foo', 'bar')
+      .gulp('--tasks-simple')
+      .run(cb);
+
+    function cb(err, stdout) {
+      expect(stdout).to.equal('a\nb\ndefault\n');
+    }
+    done();
+  });
 });
 

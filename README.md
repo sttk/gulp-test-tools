@@ -144,6 +144,7 @@ Creates a gulp runner which generates a command string and runs it.
 * **basedir(path)**
 
   Sets base directory path.
+  This base directory is remained after running gulp.
 
   **Arguments:**
   
@@ -151,7 +152,7 @@ Creates a gulp runner which generates a command string and runs it.
 
 * **chdir(path [, path ...])**
 
-  Sets directory path to be changed.
+  Sets directory paths to be changed.
 
   **Arguments:**
 
