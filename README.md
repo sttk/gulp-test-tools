@@ -137,13 +137,13 @@ $ istanbul cover example.js
 If there are multiple test scripts, you can get their total coverage by following way:
 
 ```sh
-$ istanbul cover example.js example2.js && istanbul report
+$ istanbul cover example.js example2.js --print none && istanbul report lcov text-summary
 ```
 
 If you run test scripts in the directory `./test` with **istanbul** + **mocha**, you should execute the following command:
 
 ```sh
-$ istanbul cover _mocha && istanbul report
+$ istanbul cover _mocha --print none && istanbul report lcov text-summary
 ```
 
 API
