@@ -126,6 +126,26 @@ Hello, world!
 
 ```
 
+### How to use gulpRunner with istanbul
+
+Though **gulpRunner** executes a command on a child process, it can get coverage about the command with **istanbul**. The way to get coverage is as follows:
+
+```sh
+$ istanbul cover example.js
+```
+
+If there are multiple test scripts, you can get their total coverage by following way:
+
+```sh
+$ istanbul cover example.js example2.js && istanbul report
+```
+
+If you run test scripts in the directory `./test` with **istanbul** + **mocha**, you should execute the following command:
+
+```sh
+$ istanbul cover _mocha && istanbul report
+```
+
 API
 ---
 
