@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha",
-    "coverage": "istanbul cover _mocha"
+    "coverage": "rm -rf ./coverage && istanbul cover _mocha && istanbul report"
   },
   "repository": {
     "type": "git",
