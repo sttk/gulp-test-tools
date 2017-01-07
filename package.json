@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha",
-    "coverage": "rm -rf ./coverage && istanbul cover _mocha && istanbul report"
+    "coverage": "npm install istanbul && rm -rf ./coverage && istanbul cover _mocha && istanbul report && npm uninstall istanbul"
   },
   "repository": {
     "type": "git",
@@ -24,15 +24,14 @@
   "homepage": "https://github.com/sttk/gulp-test-tools#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "eslint": "^3.4.0",
+    "eslint": "^3.13.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-cli": "^1.2.2",
-    "istanbul": "^0.4.5",
-    "mocha": "^3.0.2"
+    "mocha": "^3.2.0"
   },
   "dependencies": {
     "fined": "^1.0.2",
-    "fs-extra": "^0.30.0",
+    "fs-extra": "^1.0.0",
     "semver": "^5.3.0"
   }
 }
