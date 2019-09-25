@@ -73,14 +73,14 @@ describe('run gulp', function() {
     var r = runner().basedir(__dirname + '/fixtures');
     r.gulp('--tasks-simple').run(function(err, stdout) {
       expect(stdout).to.equal('task1\ntask2\ndefault\n');
+      r.chdir('foo/bar').gulp('--tasks-simple').run(function(err, stdout) {
+        expect(stdout).to.equal('a\nb\ndefault\n');
+        r.gulp('--tasks-simple').run(function(err, stdout) {
+          expect(stdout).to.equal('task1\ntask2\ndefault\n');
+          done();
+        });
+      });
     });
-    r.chdir('foo/bar').gulp('--tasks-simple').run(function(err, stdout) {
-      expect(stdout).to.equal('a\nb\ndefault\n');
-    });
-    r.gulp().run(function(err, stdout) {
-      expect(stdout).to.equal('task1\ntask2\ndefault\n');
-    });
-    done();
   });
 
   it('Should be able to set multiple arguments to `chdir`', function(done) {
@@ -92,8 +92,7 @@ describe('run gulp', function() {
 
     function cb(err, stdout) {
       expect(stdout).to.equal('a\nb\ndefault\n');
+      done();
     }
-    done();
   });
 });
-
