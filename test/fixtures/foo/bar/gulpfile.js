@@ -10,4 +10,6 @@ function b(cb) {
   return cb();
 }
 
+gulp.task('a', a);
+gulp.task('b', b);
 gulp.task('default', gulp.series(a, b));
